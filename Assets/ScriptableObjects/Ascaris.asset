@@ -1,0 +1,31 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 19fb4b8030eb09d419cf6b47a1cecb2d, type: 3}
+  m_Name: Ascaris
+  m_EditorClassIdentifier: 
+  CharacterName: Ascaris Lumbricoide
+  CharacterImage: {fileID: 21300000, guid: 9c7ff18c85f373340912acee181f7257, type: 3}
+  CharacterDescription: "Es un nematodo par\xE1sito del intestino delgado del ser
+    humano, \u200B A este gusano se le llama tambi\xE9n lombriz intestinal por su
+    forma alargada que lo asemeja a la lombriz de tierra."
+  CharacterPresence: Regiones tropicales y subtropicales principalmente. Se asocia
+    directamente con granjas porcinas.
+  CharacterContact: "Las personas contraen ascariasis al consumir alimentos o bebidas
+    que est\xE1n contaminados con huevos de \xE1scaris."
+  CharacterPopulation: 
+  CharacterLifecycle: Huevo y lombriz
+  CharacterSymtomps: "Dolor abdominal intenso, obstrucci\xF3n intestinal y v\xF3mitos.
+    En los peores casos desnutrici\xF3n, apendicitis entr otros."
+  CharacterDiagnosis: 
+  CharacterTreatment: "Los medicamentos antiparasitarios son la primera l\xEDnea
+    de tratamiento contra la ascariosis."
+  Character3DModel: {fileID: 0}

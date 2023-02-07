@@ -1,0 +1,31 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 19fb4b8030eb09d419cf6b47a1cecb2d, type: 3}
+  m_Name: Giardiasis
+  m_EditorClassIdentifier: 
+  CharacterName: Giardiasis
+  CharacterImage: {fileID: 21300000, guid: 5340695c7327e6346971d2aa48f8048d, type: 3}
+  CharacterDescription: "Giardia lamblia, intestinalis o duodenalis es un protozoo
+    flagelado. Es parasito de varios mam\xEDferos."
+  CharacterPresence: " Es m\xE1s com\xFAn en las regiones con malas condiciones sanitarias
+    y agua no segura."
+  CharacterContact: "La giardasis se propaga mediante la contaminaci\xF3n de los
+    alimentos o el agua, o mediante el contacto con una persona infectada."
+  CharacterPopulation: "Personas, especialmente ni\xF1os"
+  CharacterLifecycle: "Quiste y Tropozo\xEDto"
+  CharacterSymtomps: "Los s\xEDntomas pueden incluir la alternancia entre diarrea
+    l\xEDquida y heces grasas. Tambi\xE9n pueden aparecer fatiga, c\xF3licos y eructos.
+    Algunas personas no presentan s\xEDntomas."
+  CharacterDiagnosis: "Requiere diagn\xF3stico m\xE9dico"
+  CharacterTreatment: "La mayor\xEDa de los casos desaparecen al cabo de algunas
+    semanas sin necesidad de tratamiento. Los casos m\xE1s graves se tratan con antibi\xF3ticos."
+  Character3DModel: {fileID: 0}

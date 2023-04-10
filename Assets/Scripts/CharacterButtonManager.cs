@@ -12,6 +12,7 @@ public class CharacterButtonManager : MonoBehaviour
     private string characterDescription;
     private Sprite characterImage;
     private GameObject character3DModel;
+    private ARInteractionsManager interactionsManager;
 
     // Character Data Value
     public string CharacterName { set => characterName = value; }
@@ -20,8 +21,8 @@ public class CharacterButtonManager : MonoBehaviour
     public GameObject Character3DModel { set => character3DModel = value; }
 
     // UI GameObjects
-    public GameObject modelParent;
-    private GameObject model;
+    //public GameObject modelParent;
+    //private GameObject model;
     private GameObject paraciteName;
     private GameObject paraciteDesc;
 
@@ -40,6 +41,8 @@ public class CharacterButtonManager : MonoBehaviour
         var button = GetComponent<Button>();
         button.onClick.AddListener(LoadInfo);
         button.onClick.AddListener(Create3DModel);
+
+        interactionsManager = FindObjectOfType<ARInteractionsManager>();
     }
     
     void Update()
@@ -69,7 +72,7 @@ public class CharacterButtonManager : MonoBehaviour
             Destroy(ModelParent);
             Create(ModelParent);
         }*/
-        model = Instantiate(character3DModel);
+        interactionsManager.Item3DModel = Instantiate(character3DModel);
         //model.transform.position = modelParent.transform.position;
         //model.transform.parent = modelParent.transform;
         //character3DModel.transform.Rotate(Vector3.up * Time.deltaTime * speed);

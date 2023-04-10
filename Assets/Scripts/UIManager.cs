@@ -34,10 +34,7 @@ public class UIManager : MonoBehaviour
 
     private void ActivateDetailsMenu()
     {
-        //mainPanel.transform.GetChild(5).transform.DOScale(new Vector3(1,1,1), 0.3f);
         detailsMenuPanel.transform.DOScale(new Vector3(1,1,1), 0.3f);
-        //mainPanel.transform.GetChild(2).transform.DOMoveX(28, 0.3f);
-        //btnMore.transform.DOScale(1, 0.3f);
         btnMore.transform.DOScale(new Vector3(0,0,0), 0.3f);
     }
 }

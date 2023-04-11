@@ -6,9 +6,11 @@ using System;
 
 public class GameManager : MonoBehaviour
 {
-    public event Action OnMainMenu; // Menu inicial de juego
-    /*public event Action OnCharactersMenu; // Seleccion de objeto 
-    public event Action OnARPosition; // Posicionando objeto*/
+    /*public event Action OnMainMenu; // Menu inicial de juego
+    public event Action OnCharactersMenu; // Seleccion de objeto*/
+    
+    public event Action OnGameMenu; // Menu inicial de juego
+    public event Action OnARPosition; // Posicionando objeto 
 
     public event Action OnParacite; // Paracites escene
     public event Action OnDetailsMenu; // Details menu on Paracites escene
@@ -28,7 +30,7 @@ public class GameManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        MainMenu();
+        GameMenu();
     }
 
     // Update is called once per frame
@@ -37,23 +39,23 @@ public class GameManager : MonoBehaviour
         
     }
 
-    public void MainMenu()
+    public void GameMenu()
     {
-        OnMainMenu?.Invoke();
-        Debug.Log("Main Menu Activated");
+        OnGameMenu?.Invoke();
+        Debug.Log("Game Menu Activated");
     }
 
     /*public void CharactersMenu()
     {
         OnCharactersMenu?.Invoke();
         Debug.Log("Items Menu Activated");
-    }
+    }*/
 
     public void ARPosition()
     {
         OnARPosition?.Invoke();
         Debug.Log("AR Position Activated");
-    }*/
+    }
 
     public void Paracite()
     {

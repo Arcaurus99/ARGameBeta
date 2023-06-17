@@ -10,10 +10,18 @@ public class GameManager : MonoBehaviour
     public event Action OnCharactersMenu; // Seleccion de objeto*/
     
     public event Action OnGameMenu; // Menu inicial de juego
-    public event Action OnARPosition; // Posicionando objeto 
+    private static bool isGameMenu = false;
+    public bool IsGameMenu {get {return isGameMenu; }}
+    public event Action OnARPosition; // Posicionando objeto
+    private static bool isARPosition = false; 
+    public bool IsARPosition {get {return isARPosition; }}
 
     public event Action OnParacite; // Paracites escene
+    private static bool isParacite = false;
+    public bool IsParacite {get {return isParacite; }}
     public event Action OnDetailsMenu; // Details menu on Paracites escene
+    private static bool isDetailsMenu = false;
+    public bool IsDetailsMenu {get {return isDetailsMenu; }}
 
     public static GameManager instance;
     private void Awake() 
@@ -30,7 +38,7 @@ public class GameManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        GameMenu();
+        //isGameMenu = true;
     }
 
     // Update is called once per frame
@@ -42,7 +50,11 @@ public class GameManager : MonoBehaviour
     public void GameMenu()
     {
         OnGameMenu?.Invoke();
-        Debug.Log("Game Menu Activated");
+        isGameMenu = true;
+        isARPosition = false;
+        isParacite = false;
+        isDetailsMenu = false;
+        Status();
     }
 
     /*public void CharactersMenu()
@@ -54,24 +66,42 @@ public class GameManager : MonoBehaviour
     public void ARPosition()
     {
         OnARPosition?.Invoke();
-        Debug.Log("AR Position Activated");
+        isGameMenu = false;
+        isARPosition = true;
+        isParacite = false;
+        isDetailsMenu = false;
+        Status();
     }
 
     public void Paracite()
     {
         OnParacite?.Invoke();
-        Debug.Log("Paracite Actived");
+        isGameMenu = false;
+        isARPosition = false;
+        isParacite = true;
+        isDetailsMenu = false;
+        Status();
     }
 
     public void DetailsMenu()
     {
         OnDetailsMenu?.Invoke();
-        Debug.Log("DetailsMenu Actived");
+        isGameMenu = false;
+        isARPosition = false;
+        isParacite = false;
+        isDetailsMenu = true;
+        Status();
     }
 
     public void CloseApp()
     {
         Application.Quit();
+    }
+
+    //Status
+    public void Status()
+    {
+        //Debug.Log("Game Menu: " + isGameMenu + " / AR Position: " + isARPosition + " / Paracite: " + isParacite + " / Details Menu: " + isDetailsMenu);
     }
 
 }

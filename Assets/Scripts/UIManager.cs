@@ -10,12 +10,23 @@ public class UIManager : MonoBehaviour
     [SerializeField] private GameObject mainPanel;
     [SerializeField] private GameObject detailsMenuPanel;
     [SerializeField] private GameObject btnMore;
+    [SerializeField] private GameManager gameManager;
     
     // Start is called before the first frame update
     void Start()
     {
-        GameManager.instance.OnParacite += ActivateParacite;
+        gameManager.Paracite();
+        GameManager.instance.OnParacite += DesactivateDetailsMenu;
         GameManager.instance.OnDetailsMenu += ActivateDetailsMenu;
+        //print("Game manager: "+gameManager.IsGameMenu);
+
+        /*if (gameManager.IsGameMenu == true) {
+            ActivateParacite();
+        }
+
+        if (gameManager.IsARPosition == true) {
+            ActivateDetailsMenu();
+        }*/
     }
 
     // Update is called once per frame
@@ -24,7 +35,7 @@ public class UIManager : MonoBehaviour
         
     }
 
-    private void ActivateParacite()
+    private void DesactivateDetailsMenu()
     {
         //mainPanel.transform.GetChild(5).transform.DOScale(new Vector3(0,1,1), 0.3f); # it's the same
         detailsMenuPanel.transform.DOScale(new Vector3(0,1,1), 0.3f);

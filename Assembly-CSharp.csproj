@@ -59,8 +59,8 @@
     <Compile Include="Assets\Scripts\CharacterButtonManager.cs" />
     <Compile Include="Assets\Scripts\Character.cs" />
     <Compile Include="Assets\Scripts\ARInteractionsManager.cs" />
-    <Compile Include="Assets\Scripts\ModelInteractionManager.cs" />
     <Compile Include="Assets\Scripts\MainUIManager.cs" />
+    <Compile Include="Assets\Scripts\CharacterManager.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />

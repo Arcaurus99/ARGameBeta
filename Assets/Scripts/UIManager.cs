@@ -18,15 +18,6 @@ public class UIManager : MonoBehaviour
         gameManager.Paracite();
         GameManager.instance.OnParacite += DesactivateDetailsMenu;
         GameManager.instance.OnDetailsMenu += ActivateDetailsMenu;
-        //print("Game manager: "+gameManager.IsGameMenu);
-
-        /*if (gameManager.IsGameMenu == true) {
-            ActivateParacite();
-        }
-
-        if (gameManager.IsARPosition == true) {
-            ActivateDetailsMenu();
-        }*/
     }
 
     // Update is called once per frame

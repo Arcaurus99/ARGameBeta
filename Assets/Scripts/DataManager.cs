@@ -8,6 +8,9 @@ public class DataManager : MonoBehaviour
     [SerializeField] private List<Character> characters = new List <Character>();
     [SerializeField] private GameObject buttonContainer;
     [SerializeField] private CharacterButtonManager characterButtonManager;
+    
+    public List<Character> CharacterList {get {return characters; }}
+    
     // Start is called before the first frame update
     void Start()
     {

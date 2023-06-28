@@ -709,7 +709,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1551839268}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 165846617}
+        m_TargetAssemblyTypeName: ARInteractionsManager, Assembly-CSharp
+        m_MethodName: DeleteModel
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1551839268
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -780,7 +792,7 @@ MonoBehaviour:
   characters:
   - {fileID: 11400000, guid: 28f6bf666fac31a48920512b85479f00, type: 2}
   - {fileID: 11400000, guid: 450a98f6b3df0dc49a04ea01011a049a, type: 2}
-  buttonContainer: {fileID: 0}
+  buttonContainer: {fileID: 1461357245}
   characterButtonManager: {fileID: 7231651257154165298, guid: 2da729dc51c79304e9c3bae295cda74f, type: 3}
 --- !u!4 &1719293945
 Transform:

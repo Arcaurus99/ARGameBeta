@@ -40,7 +40,7 @@ public class ARInteractionsManager : MonoBehaviour
         {
             btnCatch.SetActive(true);
             float dim = 0.3f;
-            item3DModel.transform.localScale = new Vector3(dim, dim, dim);
+            //item3DModel.transform.localScale = new Vector3(dim, dim, dim);
         }
         else
         {
@@ -65,10 +65,11 @@ public class ARInteractionsManager : MonoBehaviour
             /*item3DModel = character.Character3DModel;
             Instantiate(item3DModel);*/
         }
-        int rand = UnityEngine.Random.Range(1, length);
-        var parasite = ParasiteList[rand-1];
-        item3DModel = parasite.Character3DModel;
-        Instantiate(item3DModel);
+        int rand = UnityEngine.Random.Range(0, length);
+        Debug.Log(length + " length, pick " + rand);
+        var parasite = ParasiteList[rand];
+        item3DModel = Instantiate(parasite.Character3DModel);
+        //Instantiate(item3DModel);
         float dim = 0.3f;
         item3DModel.transform.localScale = new Vector3(dim, dim, dim);
     }

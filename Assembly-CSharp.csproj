@@ -53,6 +53,7 @@
     <UnityVersion>2020.3.32f1</UnityVersion>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="Assets\Scripts\CharacterManager.cs" />
     <Compile Include="Assets\Scripts\UIManager.cs" />
     <Compile Include="Assets\Scripts\GameManager.cs" />
     <Compile Include="Assets\Scripts\DataManager.cs" />
@@ -60,7 +61,9 @@
     <Compile Include="Assets\Scripts\Character.cs" />
     <Compile Include="Assets\Scripts\ARInteractionsManager.cs" />
     <Compile Include="Assets\Scripts\MainUIManager.cs" />
-    <Compile Include="Assets\Scripts\CharacterManager.cs" />
+    <Compile Include="Assets\Scripts\Detail.cs" />
+    <Compile Include="Assets\Scripts\DetailsManager.cs" />
+    <Compile Include="Assets\Scripts\DetailContentManager.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />

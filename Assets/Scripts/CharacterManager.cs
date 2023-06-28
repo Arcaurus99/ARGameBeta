@@ -18,6 +18,7 @@ public class CharacterManager : MonoBehaviour
             model = value;
             model.transform.position = modelParent.transform.position;
             model.transform.parent = modelParent.transform;
+            model.transform.localScale = new Vector3(1, 1, 1);
         }
     }
 
@@ -34,7 +35,7 @@ public class CharacterManager : MonoBehaviour
     {
         if (model != null)
         {
-           model.transform.Rotate(Vector3.up, Time.deltaTime * 20f); // Rotation of the model on scene
+            model.transform.Rotate(Vector3.up, Time.deltaTime * 20f); // Rotation of the model on scene
         }
     }
 

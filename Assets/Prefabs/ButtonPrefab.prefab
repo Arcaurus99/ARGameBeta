@@ -134,6 +134,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bede669aaf98cbf4f862cf13f5629aa5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  characterPresence: 
+  characterContact: 
+  characterPopulation: 
+  characterLifecycle: 
+  characterSymtomps: 
+  characterDiagnosis: 
+  characterTreatment: 
+  parasitePresence: {fileID: 0}
+  parasiteContact: {fileID: 0}
+  parasitePopulation: {fileID: 0}
+  parasiteLifecycle: {fileID: 0}
+  parasiteSymtomps: {fileID: 0}
+  parasiteDiagnosis: {fileID: 0}
+  parasiteTreatment: {fileID: 0}
 --- !u!1 &6559472256413133837
 GameObject:
   m_ObjectHideFlags: 0

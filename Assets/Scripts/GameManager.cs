@@ -22,6 +22,9 @@ public class GameManager : MonoBehaviour
     public event Action OnDetailsMenu; // Details menu on Paracites escene
     private static bool isDetailsMenu = false;
     public bool IsDetailsMenu {get {return isDetailsMenu; }}
+    public event Action OnDetailsPanel; // Details Panel on Paracites escene
+    private static bool isDetailsPanel = false;
+    public bool IsDetailsPanel {get {return isDetailsPanel; }}
 
     public static GameManager instance;
     private void Awake() 
@@ -55,6 +58,7 @@ public class GameManager : MonoBehaviour
         isARPosition = false;
         isParacite = false;
         isDetailsMenu = false;
+        isDetailsPanel = false;
         Status();
     }
 
@@ -71,6 +75,7 @@ public class GameManager : MonoBehaviour
         isARPosition = true;
         isParacite = false;
         isDetailsMenu = false;
+        isDetailsPanel = false;
         Status();
     }
 
@@ -81,6 +86,7 @@ public class GameManager : MonoBehaviour
         isARPosition = false;
         isParacite = true;
         isDetailsMenu = false;
+        isDetailsPanel = false;
         Status();
     }
 
@@ -91,6 +97,18 @@ public class GameManager : MonoBehaviour
         isARPosition = false;
         isParacite = false;
         isDetailsMenu = true;
+        isDetailsPanel = false;
+        Status();
+    }
+
+    public void DetailsPanel()
+    {
+        OnDetailsPanel?.Invoke();
+        isGameMenu = false;
+        isARPosition = false;
+        isParacite = false;
+        isDetailsMenu = false;
+        isDetailsPanel = true;
         Status();
     }
 

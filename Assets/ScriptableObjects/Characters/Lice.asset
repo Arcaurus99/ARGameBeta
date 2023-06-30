@@ -17,11 +17,11 @@ MonoBehaviour:
   CharacterDescription: 'Son insectos parasitarios que pueden habitar en las personas,
     ya sea en la cabeza, el cuerpo o el area del pubis. Estos parasitos se alimentan
     de la sangre humana. '
-  CharacterPresence: 
+  CharacterPresence: Lice presence
   CharacterContact: Cabello
   CharacterPopulation: "Especialmente Ni\xF1os"
-  CharacterLifecycle: 
-  CharacterSymtomps: 
+  CharacterLifecycle: Lice lifecycle
+  CharacterSymtomps: Lice symptomps
   CharacterDiagnosis: Revision capilar
-  CharacterTreatment: 
+  CharacterTreatment: Lice treatment
   Character3DModel: {fileID: 6177402767724653895, guid: 955fa662f0cdf44498748a6552eb9ae9, type: 3}

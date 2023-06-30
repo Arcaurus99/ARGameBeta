@@ -13,7 +13,7 @@ public class Character : ScriptableObject
 	public string CharacterContact;
 	public string CharacterPopulation;
 	public string CharacterLifecycle;
-	public string CharacterSymtomps;
+	public string CharacterSymptoms;
 	public string CharacterDiagnosis;
 	public string CharacterTreatment;
 

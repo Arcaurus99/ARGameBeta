@@ -27,6 +27,14 @@ public class DataManager : MonoBehaviour
             characterButton.CharacterDescription = character.CharacterDescription;
             characterButton.CharacterImage = character.CharacterImage;
             characterButton.Character3DModel = character.Character3DModel;
+
+	        characterButton.CharacterPresence = character.CharacterPresence;
+	        characterButton.CharacterContact = character.CharacterContact;
+	        characterButton.CharacterPopulation = character.CharacterPopulation;
+	        characterButton.CharacterLifecycle = character.CharacterLifecycle;
+	        characterButton.CharacterSymptoms = character.CharacterSymptoms;
+	        characterButton.CharacterDiagnosis = character.CharacterDiagnosis;
+	        characterButton.CharacterTreatment = character.CharacterTreatment;
         }
 
         GameManager.instance.OnParacite -= CreateCharacters;

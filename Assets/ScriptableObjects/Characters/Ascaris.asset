@@ -21,11 +21,11 @@ MonoBehaviour:
     directamente con granjas porcinas.
   CharacterContact: "Las personas contraen ascariasis al consumir alimentos o bebidas
     que est\xE1n contaminados con huevos de \xE1scaris."
-  CharacterPopulation: 
+  CharacterPopulation: Ascaris populaiton
   CharacterLifecycle: Huevo y lombriz
   CharacterSymtomps: "Dolor abdominal intenso, obstrucci\xF3n intestinal y v\xF3mitos.
     En los peores casos desnutrici\xF3n, apendicitis entr otros."
-  CharacterDiagnosis: 
+  CharacterDiagnosis: Ascaris Diagnosis
   CharacterTreatment: "Los medicamentos antiparasitarios son la primera l\xEDnea
     de tratamiento contra la ascariosis."
   Character3DModel: {fileID: 0}
